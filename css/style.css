@@ -1,783 +1,686 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background-color: #f3dfca;
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-color: #f3dfca;
 }
 /* ///////////-------------------utility class------------------------- */
-.container{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
 }
-.btn{
-    display: inline-block;
-    padding: 1em 2.5em;
-    text-decoration: none;
-    border-radius: 5rem;
-    cursor: pointer;
-    outline: none;
-    margin-top: 1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #fff;
-    background: #e2781a;
+.btn {
+  display: inline-block;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  background: #e2781a;
 }
-
-/* .btn {
-    background: #e2781a;
-    color: #ffffff;
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border: 0;
-  } */
-  
-  /* img {
-    max-width: 100%;
-  } */
-
-
-
-
 
 /* //------------------------navbar----------------------------// */
-.navbar input[type='checkbox'], 
-.navbar .hamburgure-lines{
-    display: none;
+.navbar input[type="checkbox"],
+.navbar .hamburgure-lines {
+  display: none;
 }
-.navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
-    /* position: fixed; */
-    width: 100%;
-    background: #f3dfca;
-    color: #000;
-    /* opacity: 0.85; */
-    /* z-index: 999; */
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  /* position: fixed; */
+  width: 100%;
+  background: #f3dfca;
+  color: #000;
+  /* opacity: 0.85; */
+  /* z-index: 999; */
 }
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 64px;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
 }
-.menu-items{
-    display: flex;
+.menu-items {
+  display: flex;
 }
-.menu-items li{
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.8rem;
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
 }
-.logo{
-    font-size: 3rem;
+.logo {
+  font-size: 3rem;
 }
-.logo img{
-    padding-top: 12px;
-    width: 70px;
-    height: 70px;
-    width: 70px; height: 70px;
+.logo img {
+  padding-top: 8px;
+  width: 70px;
+  height: 70px;
+  width: 70px;
+  height: 60px;
 }
-.navbar a{
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-    text-transform: uppercase;
+.navbar a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-.navbar a:hover{
-    color: green;
-    transition: all 0.3s ease-in-out;
+.navbar a:hover {
+  color: green;
+  transition: all 0.3s ease-in-out;
 }
-
 
 /* -----------------------------discription---------------- */
 .info {
-    /* background: rgb(248, 248, 224); */
-    /* box-shadow: var(--shadow); */
-    display: grid;
-    /* grid-gap: 30px; */
-    grid-template-columns: repeat(2, 1fr);
-    /* padding-top: 3rem;     */
-    background: url(../img/bg-1.jpg); 
-    background-position: center;
-    background-size: cover;
-    /* height: 311px; */
-    
-  }
-.info img{
-    /* padding: 3rem; */
-    width: 100%;
-    height: 100%;
-    padding: 0 3rem 0 0;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: url(../img/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.info img {
+  width: 100%;
+  height: 100%;
+  padding: 0 3rem 0 0;
+}
+.info div {
+  padding: 0 1rem;
+  margin: auto;
+  /* text-align: center; */
+}
+.info h1 {
+  color: #e2781a;
+  font-size: 4rem;
+}
+.info p {
+  color: #111111;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
 
-}
-.info div{
-    padding: 0 1rem;
-    margin: auto;
-    /* text-align: center; */
-}
-.info h1{
-    color: #e2781a;
-    font-size: 4rem;
-}
-.info p{
-    color: #111111;
-    font-size: 1.25rem;
-    font-style: italic;
-    margin: 2rem 0;
-}
+/* //=============foood=============// */
 .food {
-    background-color: #f3dfca;
-    /* height: 50vh; */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg-bread-flour.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 25rem;
-    /* margin-top: 5rem; */
-   }
-.food .food-heading h2{
-    text-align: center;
-    color: #fff;
-    padding: 10rem 0rem;
-    font-size: 4rem;
-} 
-
-
-
-
-.grid-boxes{
-    display: grid;
+  background-color: #f3dfca;
+  /* height: 50vh; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg-bread-flour.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 25rem;
+  /* margin-top: 5rem; */
+}
+.food .food-heading h2 {
+  text-align: center;
+  color: #fff;
+  padding: 10rem 0rem;
+  font-size: 4rem;
+}
+.grid-boxes {
+  display: grid;
 }
 .boxes {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4,1fr);
-    /* padding: 0 20rem; */
-    place-self: center;
-    position: relative;
-    top: 121px;
-    margin-top: -121px;
-    /* background: #f3dfca; */
-    /* position: relative; */
-    /* top: 50%; */
-  }
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  /* padding: 0 20rem; */
+  place-self: center;
+  position: relative;
+  top: 121px;
+  margin-top: -121px;
+  /* background: #f3dfca; */
+  /* position: relative; */
+  /* top: 50%; */
+}
 .box {
-    background: #ffff;
-    text-align: center;
-    padding: 4.5rem 3rem;
-    max-width: 20rem;
-    /* box-shadow: rgb(148, 0, 0); */
-    border-radius: 2rem;
-    /* border: rgb(255, 252, 252) solid 10px; */
-}  
-.box i{
-    color: #e2781a;
-    padding-bottom: 2rem;
+  background: #ffff;
+  text-align: center;
+  padding: 4.5rem 3rem;
+  max-width: 20rem;
+  /* box-shadow: rgb(148, 0, 0); */
+  border-radius: 2rem;
+  /* border: rgb(255, 252, 252) solid 10px; */
 }
-.box h3{
-    padding-bottom: 2rem;
-    font-size: 1.7rem;    
+.box i {
+  color: #e2781a;
+  padding-bottom: 2rem;
 }
-.box p{
-    padding-bottom: 2rem;
-    font-style: italic;  
-    font-weight: 400;
-}  
-.box a{
-    color: #e2781a;
-    font-weight: 700;
-    border-width: 1px;
+.box h3 {
+  padding-bottom: 2rem;
+  font-size: 1.7rem;
 }
-
-  
-
-
-
-.loaf {  
-    display: grid;
-    /* grid-gap: 30px; */
-    grid-template-columns: repeat(2, 1fr);
-    /* margin-bottom: 4rem;     */
+.box p {
+  padding-bottom: 2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.box a {
+  color: #e2781a;
+  font-weight: 700;
+  border-width: 1px;
+}
+/* //=============loaf======== */
+.loaf {
+  display: grid;
+  /* grid-gap: 30px; */
+  grid-template-columns: repeat(2, 1fr);
+  /* margin-bottom: 4rem;     */
+}
+.loaf img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.loaf div {
+  padding: 0 1rem;
+  margin: auto 0;
+  /* text-align: center; */
+}
+.loaf h1 {
+  color: black;
+  font-size: 4rem;
+}
+.loaf p {
+  color: black;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+/* //==============articles========= */
+.grid-paras {
+  display: grid;
+}
+.paras {
+  display: grid;
+  grid-gap: 1rem;
+  place-self: center;
+  grid-template-columns: repeat(3, 1fr);
+  /* margin: 0 25rem; */
+  position: relative;
+  top: 11rem;
+  /* z-index: -1; */
+}
+.paras h3 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem;
+}
+.paras p {
+  color: white;
+  padding: 1rem;
+}
+.paras .para {
+  border-radius: 2rem;
+  max-width: 20rem;
+  min-height: 25rem;
+}
+.paras .para-1 {
+  background: #e2781a;
+}
+.paras .para-2 {
+  background: #332e29;
+}
+/* ///==============fresh=========== */
+.fresh {
+  margin: auto 0;
+  text-align: center;
+  background: white;
+  padding-top: 22rem;
+  /* font-size: 1.6rem; */
+  padding-bottom: 4rem;
+}
+.fresh h2 {
+  font-size: 4rem;
+  padding: 1rem 0;
+}
+.fresh p {
+  font-size: 1.25rem;
+}
+.fresh a {
+  font-size: 1.25rem;
+}
+/* ============flour========= */
+.flour {
+  padding: 15rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg-bread-flour.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.flour .flour-div {
+  background: white;
+  border-radius: 2rem;
+  max-width: 444px;
+  /* float: right; */
+  margin-left: auto;
+}
+.flour .flour-div div {
+  padding: 3rem;
+}
+.flour h3 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+.flour p {
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+/* =============bakery-items======= */
+.bakery-items {
+  background: white;
+}
+.bakery-items-description {
+  text-align: center;
+  padding: 2rem 0;
+}
+.bakery-items-description h2 {
+  font-size: 4rem;
+}
+.bakery-items-description p:first-of-type {
+  line-height: 2;
+  font-size: medium;
+  font-style: italic;
+}
+.item-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.item-boxes img {
+  width: 24.6rem;
+  height: 24.6rem;
+  border-radius: 50%;
+}
+.item-box {
+  text-align: center;
+}
+.item-boxes h4 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.item-boxes .pr {
+  font-size: 1rem;
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+.item-boxes .price {
+  color: #e2781a;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+/* ==========queri======== */
+.queri {
+  background: #e2781a;
+  padding: 5rem 0;
+  color: white;
+}
+.queri a {
+  /* text-decoration: none; */
+  color: white;
+}
+.queri .div-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.queri .queri-phone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.queri .queri-phone .queri-i {
+  text-align: right;
+}
+.queri .queri-phone .queri-dis {
+  text-align: left;
+}
+.queri .queri-phone .queri-dis h3 {
+  font-size: 2rem;
+}
+.queri .queri-phone .queri-dis p {
+  font-size: 1.3rem;
+}
+.queri .queri-phone .queri-dis a {
+  font-size: 1.3rem;
+}
+.queri .queri-link {
+  padding-top: 1.5rem;
+}
+.queri .queri-link a {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 15px 66px 16px 65px;
+  border-radius: 2rem;
+  /* font-size: 1.5rem; */
+  font-weight: 700;
+}
+.queri .queri-link a:hover {
+  background-color: white;
+  color: black;
+}
+/* ===========slogan======= */
+.slogan {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg-bread-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.slogan .slogan-div {
+  text-align: center;
+  margin: auto 0;
+  padding: 7rem;
+  color: white;
+}
+.slogan .slogan-div h2 {
+  font-size: 4rem;
+  padding: 1rem;
+}
+.slogan .slogan-div p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.slogan .slogan-div .slogan-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* margin: 0 auto; */
+  gap: 2rem;
+  margin: auto;
+  width: 401px;
+}
+.slogan .slogan-div a {
+  display: inline;
+  font-size: 1.3rem;
+  padding: 16px 31px 16px 30px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5rem;
+  /* margin-top: 5rem; */
+}
+.slogan .slogan-div .slogan-links .a-1 {
+  /* padding-right: 4rem; */
+  background-color: #e2781a;
+  border: none;
+}
+.slogan .slogan-div .slogan-links .a-1:hover {
+  /* padding-right: 4rem; */
+  background-color: #9e5413;
+  font-weight: bold;
+}
+.slogan .slogan-div .slogan-links .a-2:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+/* ==============contact========= */
+.contact {
+  background: url(../img/bg-bread-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+}
+.contact .contact-div {
+  text-align: center;
+  padding: 7rem;
+}
+.contact h2 {
+  font-size: 4rem;
+}
+.contact h3 {
+  font-size: 1.5rem;
+  color: #e2781a;
+}
+.contact p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+/* =================footer========== */
+.footer-div {
+  text-align: center;
+  padding: 3rem;
+  background-color: #333333;
+}
+.footer-div a {
+  padding: 0 1rem;
+  color: #e2781a;
+}
+.footer-div span {
+  color: white;
+}
+/* =============media queries============== */
+@media (max-width: 1000px) {
+  .item-boxes {
+    grid-template-columns: repeat(3, 1fr);
   }
-.loaf img{
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    /* text-align: center; */
-}
-.loaf div{
-    padding: 0 1rem;
-    margin: auto 0;
-    /* text-align: center; */
-}
-.loaf h1{
-    color: black;
-    font-size: 4rem;
-}
-.loaf p{
-    color: black;
-    font-size: 1.25rem;
-    font-style: italic;
-    margin: 2rem 0;
 }
 
-
-
-
-
-.grid-paras{
-    display: grid;
-}
-.paras {  
-    display: grid;
-    grid-gap: 1rem;
-    place-self: center;
-    grid-template-columns: repeat(3, 1fr);    
-    /* margin: 0 25rem; */
-    position: relative;
-    top: 11rem;
-    /* z-index: -1; */
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+    /* position: fixed; */
   }
-.paras h3{
-    font-size: 2.5rem;
-    color: white;
-    padding: 1rem;
-}  
-.paras p{
-    color: white;
-    padding: 1rem;    
-}
-.paras .para{
-    border-radius: 2rem;
-    max-width: 20rem;
-    min-height: 25rem;
-}
-.paras .para-1{
-    background: #e2781a;
-}
-.paras .para-2{
-    background: #332e29;
-}
-
-
-
-
-
-.fresh{
-    margin: auto 0;
-    text-align: center;
-    background: white;
-    padding-top: 22rem;
-    /* font-size: 1.6rem; */
-    padding-bottom: 4rem;
-}
-.fresh h2{
-    font-size: 4rem;
-    padding: 1rem 0;
-}
-.fresh p{
-    font-size: 1.25rem;
-}
-.fresh a{
-    font-size: 1.25rem;
-}
-
-
-
-
-
-
-.flour{
-    padding: 15rem;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg-bread-flour.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.flour .flour-div{
-    background: white;
-    border-radius: 2rem;
-    max-width: 444px;
-    /* float: right; */
-    margin-left: auto;
-}
-/* .flour::after{
-    content: "";
+  .navbar input[type="checkbox"],
+  .navbar .hamburgure-lines {
     display: block;
-    clear: both;
-} */
-.flour .flour-div div{
-    padding: 3rem;
-}
-.flour h3{
-    font-size: 1.9rem;
-    padding-bottom: 1rem;
-}
-.flour p{
-    padding-bottom: 1rem;
-    font-weight: 400;
-}
-
-
-
-
-.bakery-items{
-    background: white;
-}
-.bakery-items-description{
-    text-align: center;
-    padding: 2rem 0;
-}
-.bakery-items-description h2{
-    font-size: 4rem;
-}
-.bakery-items-description p:first-of-type{
-    line-height: 2;
-    font-size: medium;
-    font-style: italic;
-}
-.item-boxes{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);    
-}
-.item-boxes img{
-    width: 24.6rem;
-    height: 24.6rem;
-    border-radius: 50%;
-}
-.item-box{
-    text-align: center;
-}
-.item-boxes h4{
-    font-size: 1.3rem;
-    padding: 1rem 0;
-}
-.item-boxes .pr{
-    font-size: 1rem;
-    font-style: italic;
-    padding-bottom: 2rem;
-}
-.item-boxes .price{
-    color: #e2781a;
+  }
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+  .navbar input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 40px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+  .navbar-container .hamburgure-lines {
+    display: block;
+    height: 32px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navbar-container .hamburgure-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+  .navbar-container .hamburgure-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar-container .hamburgure-lines .line2 {
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar-container .hamburgure-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px;
+  }
+  .navbar .menu-items li {
+    margin-bottom: 3rem;
     font-size: 2rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
-}
-
-
-
-
-
-.queri{
-    background: #e2781a;
-    padding: 5rem 0;
-    color: white;      
-}
-.queri a{
-    /* text-decoration: none; */
-    color: white;
-}
-.queri .div-main{    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);    
-    text-align: center;
-}
-.queri .queri-phone{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
-}
-.queri .queri-phone .queri-i{
-    text-align: right;
-}
-.queri .queri-phone .queri-dis{
-    text-align: left;
-
-}
-.queri .queri-phone .queri-dis h3{
-    font-size: 2rem;
-}
-.queri .queri-phone .queri-dis p{
-    font-size: 1.3rem;
-}
-.queri .queri-phone .queri-dis a{
-    font-size: 1.3rem;
-}
-.queri .queri-link{
-    padding-top: 1.5rem;
-}
-.queri .queri-link a{
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 15px 66px 16px 65px;
-    border-radius: 2rem;
-    /* font-size: 1.5rem; */
-    font-weight: 700;
-}
-.queri .queri-link a:hover{
-    background-color: white;
-    color: black;
-}
-
-
-
-
-
-.slogan{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg-bread-3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.slogan .slogan-div{
-    text-align: center;
-    margin: auto 0;
-    padding: 7rem;
-    color: white;
-}
-.slogan .slogan-div h2{
-    font-size: 4rem;
-    padding: 1rem;
-}
-.slogan .slogan-div p{
-    font-size: 1.3rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-.slogan .slogan-div .slogan-links{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* margin: 0 auto; */
-    gap: 2rem;
-    margin: auto;
-    width: 401px;
-}
-.slogan .slogan-div a{
-    display: inline;
-    font-size: 1.3rem;
-    padding: 16px 31px 16px 30px;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5rem;
-    /* margin-top: 5rem; */
-}
-.slogan .slogan-div .slogan-links .a-1{
-    /* padding-right: 4rem; */
-    background-color: #e2781a;
-    border: none;
-}
-.slogan .slogan-div .slogan-links .a-1:hover{
-    /* padding-right: 4rem; */
-    background-color: #9e5413;
-    font-weight: bold;
-}
-.slogan .slogan-div .slogan-links .a-2:hover{
-    background-color: white;
-    color: black;
-    font-weight: bold;
-}
-
-
-
-
-.contact{
-    background: url(../img/bg-bread-4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* object-fit: cover; */
-}
-.contact .contact-div{
-    text-align: center;
-    padding: 7rem;
-}
-.contact h2{
-    font-size: 4rem;
-}
-.contact h3{
-    font-size: 1.5rem;
-    color: #e2781a;
-}
-.contact p{
-    font-size: 1.2rem;
     font-weight: 500;
-    padding: 1rem 0;
-}
-
-.footer-div{
-    text-align: center;
-    padding: 3rem;
-    background-color: #333333;
-}
-.footer-div a{
-    padding: 0 1rem;
-    color: #e2781a;
-}
-.footer-div span{
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1000px){
-    .item-boxes {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px){
-    .navbar{
-        opacity: 0.95;
-        /* position: fixed; */
-    }
-    .navbar input[type='checkbox'], 
-    .navbar .hamburgure-lines{
-        display: block;
-    }
-    .navbar-container{
-        display: block;
-        position: relative;
-        height: 64px;
-    }
-    .navbar input[type='checkbox']{
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 40px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-    }
-    .navbar-container .hamburgure-lines{
-        display: block;
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .navbar-container .hamburgure-lines .line{
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333;
-    }
-    .navbar-container .hamburgure-lines .line1{
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-    }
-    .navbar-container .hamburgure-lines .line2{
-        transition: transform 0.4s ease-in-out;
-    }
-    .navbar-container .hamburgure-lines .line3{
-        transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
-    }
-    .navbar .menu-items{
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translateX(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 50px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow: 5px 0px 10px 0px;
-    }
-    .navbar .menu-items li{
-        margin-bottom: 3rem;
-        font-size: 2rem;
-        font-weight: 500;
-    }
-    .logo{
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 3rem;
-    }
-    .navbar-container input[type='checkbox']:checked ~ .menu-items{
-        transform: translateX(0);
-        position: fixed;
-    }
-    .navbar-container input[type='checkbox']:checked ~ .hamburgure-lines .line1{
-        transform: rotate(45deg);
-    }
-    .navbar-container input[type='checkbox']:checked ~ .hamburgure-lines .line2{
-        /* display: none; */
-        transform: scaleY(0);
-    }
-    .navbar-container input[type='checkbox']:checked ~ .hamburgure-lines .line3{
-        transform: rotate(-45deg);
-    }
-
-    
-
-    /* .info{
+  }
+  .logo {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 3rem;
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+    position: fixed;
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .hamburgure-lines .line1 {
+    transform: rotate(45deg);
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .hamburgure-lines .line2 {
+    /* display: none; */
+    transform: scaleY(0);
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .hamburgure-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  /* .info{
         height: 311px;
     } */
-    .food{
-        height: 100%;
-        margin-bottom: 18rem;
-    }
-    .loaf {
-        /* display: grid; */
-        grid-gap: 30px;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-    }    
-    .boxes{
-        grid-template-columns: repeat(2,1fr);
-        /* padding: 0 13rem; */
-    }
-    .paras{
-        gap: 1rem;
-        /* margin: 0px 10rem; */
-        grid-template-columns: repeat(2,1fr);
-    }
-    .fresh{
-        padding-top: 15rem;
-    }
-    .queri .queri-phone .queri-dis h3 {
-        font-size: 1.7rem;
-    }
-    .queri .queri-phone .queri-dis p {
-        font-size: 1.1rem;
-    }
-    .queri .queri-phone .queri-dis a {
-        font-size: 1.1rem;
-    }
-    .item-boxes{
-        grid-template-columns: repeat(2, 1fr);
-    }
-} 
-
-
-
-
-
-
-@media (max-width: 500px){
-    .info {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .info img{
-        padding: 0;
-    }
-    .info div {
-        margin-bottom: 1rem;
-    }
-    .paras {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .paras .para {
-        max-width: 30rem;
-    }
-    .fresh h2 {
-        font-size: 3rem;
-    }
-    .fresh p {
-        font-size: 1.2rem;
-        padding: 0 1rem;
-    }
-    .fresh a {
-        font-size: 1.1rem;
-    }
-    .flour {
-        padding: 6rem;
-    }
-    .bakery-items-description h2 {
-        font-size: 3rem;
-    }
-    .bakery-items-description p:first-of-type {
-        font-size: 1.2rem;
-        padding: 0 1rem;
-    }
-    .item-boxes {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .queri .div-main {
-        grid-template-columns: repeat(1,1fr);
-        gap: 1.5rem;
-    }
-    .queri .queri-phone {
-        grid-template-columns: repeat(1,1fr);
-        gap: 1.5rem;
-    }
-    .queri .queri-phone .queri-i {
-        text-align: center;
-    }
-    .queri .queri-phone .queri-dis {
-        text-align: center;
-    }
-    .slogan .slogan-div h2 {
-        font-size: 3rem;
-        padding: 0;
-    }
-    .slogan .slogan-div p {
-        font-size: 1.15rem;
-        padding: 0;
-    }
-    .slogan .slogan-div .slogan-links {
-        width: auto;
-    }
-    .slogan .slogan-div a {
-        font-size: 1rem;
-        padding: 10px 15px 10px 15px;
-    }    
+  .food {
+    height: 100%;
+    margin-bottom: 18rem;
+  }
+  .loaf {
+    /* display: grid; */
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 0 13rem; */
+  }
+  .paras {
+    gap: 1rem;
+    /* margin: 0px 10rem; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fresh {
+    padding-top: 15rem;
+  }
+  .queri .queri-phone .queri-dis h3 {
+    font-size: 1.7rem;
+  }
+  .queri .queri-phone .queri-dis p {
+    font-size: 1.1rem;
+  }
+  .queri .queri-phone .queri-dis a {
+    font-size: 1.1rem;
+  }
+  .item-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+@media (max-width: 500px) {
+  .info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info img {
+    padding: 0;
+  }
+  .info div {
+    margin-bottom: 1rem;
+  }
+  .paras {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .paras .para {
+    max-width: 30rem;
+  }
+  .fresh h2 {
+    font-size: 3rem;
+  }
+  .fresh p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .fresh a {
+    font-size: 1.1rem;
+  }
+  .flour {
+    padding: 6rem;
+  }
+  .bakery-items-description h2 {
+    font-size: 3rem;
+  }
+  .bakery-items-description p:first-of-type {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .item-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .queri .div-main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .queri .queri-phone {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .queri .queri-phone .queri-i {
+    text-align: center;
+  }
+  .queri .queri-phone .queri-dis {
+    text-align: center;
+  }
+  .slogan .slogan-div h2 {
+    font-size: 3rem;
+    padding: 0;
+  }
+  .slogan .slogan-div p {
+    font-size: 1.15rem;
+    padding: 0;
+  }
+  .slogan .slogan-div .slogan-links {
+    width: auto;
+  }
+  .slogan .slogan-div a {
+    font-size: 1rem;
+    padding: 10px 15px 10px 15px;
+  }
+}
 
-
-
-
-
-
-
-@media (max-width: 425px){
-    .boxes {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .loaf img {
-        width: 300px;
-        height: 300px;
-    }
-    .footer-div p{
-        font-size: 0.8rem;
-    }
+@media (max-width: 425px) {
+  .boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .loaf img {
+    width: 300px;
+    height: 300px;
+  }
+  .footer-div p {
+    font-size: 0.8rem;
+  }
 }
