@@ -9,230 +9,322 @@
     <title>Hot Bake Restraunt</title>
 </head>
 <body>
-    <nav class="navbar ">
-        <div class="navbar-container container">                
-            <input type="checkbox">
-            <div class="hamburgure-lines">                
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+ {/* navbar */}
+        <nav className="navbar ">
+          <div className="navbar-container container">
+            <input type="checkbox" />
+            <div className="hamburgure-lines">
+              <span className="line line1" />
+              <span className="line line2" />
+              <span className="line line3" />
             </div>
-            <h1 class="logo"><img src="./img/logo.jpg" alt=""></h1>
-            <ul class="menu-items">
-                <li class="menu-item"><a href="#home">HOME</a></li>
-                <li class="menu-item"><a href="#about">Our Service</a></li>
-                <li class="menu-item"><a href="#category">Category</a></li>
-                <li class="menu-item"><a href="#menu">Menu</a></li>
-                <li class="menu-item"><a href="#contact">CONTACT</a></li>
-            </ul>            
-        </div>
-    </nav>
-
-    <!-- //discription  -->
-    <section class="info" id="home">
-        <img src="./img/bg-bread-flour.jpg" alt="">
-        <div>
-          <h1>Hotcake Bake Restraunt</h1>
-          <p>Nibh venenatis cras sed felis eget velit aliquet sagittis id.<br> Tellus pellentesque eu tincidunt tortor</p>
-          <a href="#" class="btn">Learn More</a>
-        </div>
-      </section>
-
-      <section class="food" id="about">
-        <div class="food-heading">
-            <h2>Our Services</h2>
-        </div>
-        <div class="grid-boxes">
-          <div class="boxes">
-            <div class="box">
-              <i class="fas fa-chart-pie fa-4x"></i>
-              <h3>Breads</h3>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              <a href="#" class="box-link">Learn More</a>
-            </div>
-            <div class="box">
-              <i class="fas fa-globe fa-4x"></i>
-              <h3>Cakes</h3>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              <a href="#" class="box-link">Learn More</a>
-            </div>
-            <div class="box">
-              <i class="fas fa-cog fa-4x"></i>
-              <h3>Pasteries</h3>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              <a href="#" class="box-link">Learn More</a>
-            </div>
-            <div class="box">
-              <i class="fas fa-users fa-4x"></i>
-              <h3>Pizzas</h3>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              <a href="#" class="box-link">Learn More</a>
-            </div>
-        </div>
-        </div>
-      </section>
-
-
-      <section class="loaf">
-        <img src="./img/bread-girl.jpg" alt="">
-        <div>
-          <h1>Loaf Products</h1>
-          <p>Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Lobortis elementum nibh tellus molestie nunc non. Aliquet bibendum</p>
-          <a href="#" class="btn">Learn More</a>
-        </div>
-      </section>
-
-
-      <article class="grid-paras">
-        <section class="paras">
-          <div class="para-1 para">
-            <h3>01</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1 className="logo">
+              <img src="./img/logo.jpg" alt />
+            </h1>
+            <ul className="menu-items">
+              <li className="menu-item">
+                <a href="#home">HOME</a>
+              </li>
+              <li className="menu-item">
+                <a href="#about">Our Service</a>
+              </li>
+              <li className="menu-item">
+                <a href="#category">Category</a>
+              </li>
+              <li className="menu-item">
+                <a href="#menu">Menu</a>
+              </li>
+              <li className="menu-item">
+                <a href="#contact">CONTACT</a>
+              </li>
+            </ul>
           </div>
-          <div class="para-2 para">
-            <h3>02</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div class="para-1 para">
-            <h3>03</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </nav>
+        {/* Home */}
+        <section className="info" id="home">
+          <img src="./img/bg-bread-flour.jpg" alt />
+          <div>
+            <h1>Hotcake Bake Restraunt</h1>
+            <p>
+              Nibh venenatis cras sed felis eget velit aliquet sagittis id.
+              <br /> Tellus pellentesque eu tincidunt tortor
+            </p>
+            <a href="#" className="btn">
+              Learn More
+            </a>
           </div>
         </section>
-      </article>
-
-
-      <section class="fresh" id="category">
-        <h2>Fresh breads, cakes and <br> baked daily</h2>
-        <p>From wholesome, organic loaves to mouth-watering cakes, there’s a perfect product for every<br> occasion! We pride ourselves on offering one of the widest authentic product<br> ranges from around the world.</p>
-        <a href="#" class="btn">Learn More</a>
-      </section>
-
-
-      <section class="flour">
-        <div class="flour-div">
-          <div>
-            <h3>Our Mission</h3>
-            <p>We opened our first bakery in the South End in 2000 with one goal: to make the world a sweeter place through warm smiles, gooey sticky buns, in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn">Learn More</a>
+        {/* About */}
+        <section className="food" id="about">
+          <div className="food-heading">
+            <h2>Our Services</h2>
           </div>
-        </div>
-      </section>
-
-
-      <section class="bakery-items" id="menu">
-        <div class="bakery-items-description">
-          <h2>Restraunt Items</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-        </div>
-
-        <div class="item-boxes">
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-          <div class="item-box">
-            <img src="./img/b-i-1.jpg" alt="bread">
-            <h4>BAGUETTE</h4>
-            <p class="pr">Small-batch sourdough baguette.</p>
-            <p class="price">&#36;4.5</p>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="queri">
-        <div class="div-main">
-          <div class="queri-phone">
-            <div class="queri-i"><i class="fas fa-globe fa-4x"></i></div>
-            <div class="queri-dis">
-              <h3>Have a question?</h3>
-              <p style="display: inline-block;">Call us today ​+1 777 000 0000 or</p>
-              <a href="#" >Email Us</a>
+          <div className="grid-boxes">
+            <div className="boxes">
+              <div className="box">
+                <i className="fas fa-chart-pie fa-4x" />
+                <h3>Breads</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+                <a href="#" className="box-link">
+                  Learn More
+                </a>
+              </div>
+              <div className="box">
+                <i className="fas fa-globe fa-4x" />
+                <h3>Cakes</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+                <a href="#" className="box-link">
+                  Learn More
+                </a>
+              </div>
+              <div className="box">
+                <i className="fas fa-cog fa-4x" />
+                <h3>Pasteries</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+                <a href="#" className="box-link">
+                  Learn More
+                </a>
+              </div>
+              <div className="box">
+                <i className="fas fa-users fa-4x" />
+                <h3>Pizzas</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+                <a href="#" className="box-link">
+                  Learn More
+                </a>
+              </div>
             </div>
           </div>
-          <div class="queri-link">
-            <a href="#">GET IN TOUCH</a>
+        </section>
+        <section className="loaf">
+          <img src="./img/bread-girl.jpg" alt />
+          <div>
+            <h1>Loaf Products</h1>
+            <p>
+              Ultricies leo integer malesuada nunc vel risus commodo viverra
+              maecenas. Lobortis elementum nibh tellus molestie nunc non.
+              Aliquet bibendum
+            </p>
+            <a href="#" className="btn">
+              Learn More
+            </a>
           </div>
-        </div>
-      </section>
-
-
-
-      <section class="slogan">
-        <div class="slogan-div">
-          <h2>Roll, proof, and bake. Every day.</h2>
-          <p>When it comes to bread and sandwiches, freshness equals quality. That's why we bake<br> our loaves, bagels, and sweet treats every single morning for maximum freshness.</p>
-          <div class="slogan-links">
-            <a href="#" class="a-1">SEE FULL MENU</a>
-            <a href="#" class="a-2">ORDER NOW</a>
+        </section>
+        <article className="grid-paras">
+          <section className="paras">
+            <div className="para-1 para">
+              <h3>01</h3>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+            <div className="para-2 para">
+              <h3>02</h3>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+            <div className="para-1 para">
+              <h3>03</h3>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+          </section>
+        </article>
+        {/* category */}
+        <section className="fresh" id="category">
+          <h2>
+            Fresh breads, cakes and <br /> baked daily
+          </h2>
+          <p>
+            From wholesome, organic loaves to mouth-watering cakes, there’s a
+            perfect product for every
+            <br /> occasion! We pride ourselves on offering one of the widest
+            authentic product
+            <br /> ranges from around the world.
+          </p>
+          <a href="#" className="btn">
+            Learn More
+          </a>
+        </section>
+        <section className="flour">
+          <div className="flour-div">
+            <div>
+              <h3>Our Mission</h3>
+              <p>
+                We opened our first bakery in the South End in 2000 with one
+                goal: to make the world a sweeter place through warm smiles,
+                gooey sticky buns, in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+              <a href="#" className="btn">
+                Learn More
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-
-
-
-      <section class="contact" id="contact">
-        <div class="contact-div">
-          <h2>Visit Us</h2>
-          <p>121 Rock Sreet, 21 Avenue,<br> New York, NY 92103-9000</p>
-          <h3>HOURS</h3>
-          <p>Monday – Saturday<br>9am – 7pm</p>
-          <p>Sunday<br>10am – 6pm</p>
-          <h3>PHONE</h3>
-          <p>1 (234) 567-891</p>
-        </div>
-      </section>
-
-
-
-      <section class="footer">
-        <div class="footer-div">
-          <p><a href="#">Website Template</a><span>created with</span><a href="#">Best Free Website Builder</a></p>
-        </div>
-      </section>
-
-
-
+        </section>
+        {/* menu */}
+        <section className="bakery-items" id="menu">
+          <div className="bakery-items-description">
+            <h2>Restraunt Items</h2>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+              <br /> Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt.
+            </p>
+          </div>
+          <div className="item-boxes">
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+            <div className="item-box">
+              <img src="./img/b-i-1.jpg" alt="bread" />
+              <h4>BAGUETTE</h4>
+              <p className="pr">Small-batch sourdough baguette.</p>
+              <p className="price">$4.5</p>
+            </div>
+          </div>
+        </section>
+        <section className="queri">
+          <div className="div-main">
+            <div className="queri-phone">
+              <div className="queri-i">
+                <i className="fas fa-globe fa-4x" />
+              </div>
+              <div className="queri-dis">
+                <h3>Have a question?</h3>
+                <p style={{ display: "inline-block" }}>
+                  Call us today ​+1 777 000 0000 or
+                </p>
+                <a href="#">Email Us</a>
+              </div>
+            </div>
+            <div className="queri-link">
+              <a href="#">GET IN TOUCH</a>
+            </div>
+          </div>
+        </section>
+        <section className="slogan">
+          <div className="slogan-div">
+            <h2>Roll, proof, and bake. Every day.</h2>
+            <p>
+              When it comes to bread and sandwiches, freshness equals quality.
+              That's why we bake
+              <br /> our loaves, bagels, and sweet treats every single morning
+              for maximum freshness.
+            </p>
+            <div className="slogan-links">
+              <a href="#" className="a-1">
+                SEE FULL MENU
+              </a>
+              <a href="#" className="a-2">
+                ORDER NOW
+              </a>
+            </div>
+          </div>
+        </section>
+        {/* contact */}
+        <section className="contact" id="contact">
+          <div className="contact-div">
+            <h2>Visit Us</h2>
+            <p>
+              121 Rock Sreet, 21 Avenue,
+              <br /> New York, NY 92103-9000
+            </p>
+            <h3>HOURS</h3>
+            <p>
+              Monday – Saturday
+              <br />
+              9am – 7pm
+            </p>
+            <p>
+              Sunday
+              <br />
+              10am – 6pm
+            </p>
+            <h3>PHONE</h3>
+            <p>1 (234) 567-891</p>
+          </div>
+        </section>
+        {/* footer */}
+        <section className="footer">
+          <div className="footer-div">
+            <p>
+              <a href="#">Website Template</a>
+              <span>created with</span>
+              <a href="#">Best Free Website Builder</a>
+            </p>
+          </div>
+        </section>
 </body>
 </html>
